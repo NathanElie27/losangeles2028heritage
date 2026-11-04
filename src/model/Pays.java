@@ -1,13 +1,12 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Pays {
 
     private int id;
     private static String nom = "France";
-    private ArrayList<Athlete> Athletes;
+    private ArrayList<Athlete> athletes;
     private ArrayList<Medaille> medailles;
     private ArrayList<EpreuveCollective> epreuveCollectives;
 
@@ -22,7 +21,7 @@ public class Pays {
     public Pays(int id, String nom, ArrayList<Athlete> athletes, ArrayList<Medaille> medailles, ArrayList<EpreuveCollective> epreuveCollectives) {
         this.id = id;
         this.nom = nom;
-        Athletes = athletes;
+        this.athletes = athletes;
         this.medailles = medailles;
         this.epreuveCollectives = epreuveCollectives;
     }
@@ -44,11 +43,11 @@ public class Pays {
     }
 
     public ArrayList<Athlete> getAthletes() {
-        return Athletes;
+        return athletes;
     }
 
     public void setAthletes(ArrayList<Athlete> athletes) {
-        Athletes = athletes;
+        this.athletes = athletes;
     }
 
     public ArrayList<Medaille> getMedailles() {

@@ -12,18 +12,14 @@ public class TestEpreuve {
 
         EpreuveCollective uneEpreuveCollective = new EpreuveCollective(1,"Basketball","40",1);
 
-        Pays pays1 = new Pays();
-        Pays pays2 = new Pays();
-        Pays pays3 = new Pays();
+        Pays p1 = new Pays(1,"France");
+        Pays p2 = new Pays(2,"Espagne");
+        Pays p3 = new Pays(3,"Italie");
 
         ArrayList<Pays> lesPays = new ArrayList<Pays>();
-
-        pays1.setNom("France");
-        lesPays.add(pays1);
-        pays1.setNom("Espagne");
-        lesPays.add(pays2);
-        pays1.setNom("Italie");
-        lesPays.add(pays3);
+        lesPays.add(p1);
+        lesPays.add(p2);
+        lesPays.add(p3);
 
         int nbPays = lesPays.size();
 

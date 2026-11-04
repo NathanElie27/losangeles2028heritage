@@ -9,6 +9,9 @@ public class Athlete {
     private Pays pays;
     private ArrayList<Participation> participations;
 
+    public Athlete() {
+    }
+
     public Athlete(int id, String nom) {
         this.id = id;
         this.nom = nom;
@@ -52,4 +55,8 @@ public class Athlete {
     public void setParticipations(ArrayList<Participation> participations) {
         this.participations = participations;
     }
+
+    public int nbAtheletePays(int nbAthletes){
+        return nbAthletes;
+    };
 }

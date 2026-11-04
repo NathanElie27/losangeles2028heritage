@@ -52,13 +52,6 @@ public class EpreuveCollective extends Epreuve{
 
     @Override
     public int nbParticipantEpCollective(int nbPays) {
-        if (nbPays == 2){
-            String[] a = {"france","Italie"};
-            nbPays = a.length;
-        } else if ( nbPays == 3 ){
-            String[] a = {"france","Italie","USA"};
-            nbPays = a.length;
-        }
         return nbPays;
     }
 }
