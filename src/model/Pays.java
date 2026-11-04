@@ -65,4 +65,12 @@ public class Pays {
     public void setEpreuveCollectives(ArrayList<EpreuveCollective> epreuveCollectives) {
         this.epreuveCollectives = epreuveCollectives;
     }
+
+    public int nbAtheletePays(int nbAthletes){
+        return nbAthletes;
+    };
+
+    public int nbMedaille(int nbMedaille){
+        return nbMedaille;
+    };
 }

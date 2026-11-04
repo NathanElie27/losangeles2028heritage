@@ -56,7 +56,4 @@ public class Athlete {
         this.participations = participations;
     }
 
-    public int nbAtheletePays(int nbAthletes){
-        return nbAthletes;
-    };
 }

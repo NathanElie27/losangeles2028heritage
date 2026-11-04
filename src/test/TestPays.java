@@ -22,25 +22,27 @@ public class TestPays {
         Medaille uneMedaille2 = new Medaille(1, "d'argent", 2);
 
         ArrayList<Athlete> lesAhtletes = new ArrayList<Athlete>();
+        ArrayList<Athlete> lesAhtletes2 = new ArrayList<Athlete>();
+
         Athlete a1 = new Athlete(1, "ELIE");
         Athlete a2 = new Athlete(4, "BERNARD");
         Athlete a3 = new Athlete(6, "TEST");
 
         a1.setPays(unPays);
         a2.setPays(unPays);
-        a3.setPays(unPays);
+        a3.setPays(unPays2);
 
         lesAhtletes.add(a1);
         lesAhtletes.add(a2);
-        lesAhtletes.add(a3);
+        lesAhtletes2.add(a3);
 
         int nbAthletes = lesAhtletes.size();
+        int nbAthletes2 = lesAhtletes2.size();
 
         ArrayList<Medaille> lesMedailles = new ArrayList<Medaille>();
 
-        System.out.println("Le nombre d'athletes en " + unPays.getNom() + " est de " + unAthlete.nbAtheletePays(nbAthletes));
-
-
+        System.out.println("Le nombre d'athletes en " + unPays2.getNom() + " est de " + unPays2.nbAtheletePays(nbAthletes));
+        System.out.println("Le nombre d'athletes en " + unPays.getNom() + " est de " + unPays.nbAtheletePays(nbAthletes));
 
 
         System.out.println("L'athlete "+a1.getNom()+" ,participera a l'epreuve de "+
