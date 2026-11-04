@@ -17,6 +17,14 @@ public class Medaille {
         this.nbPoints = nbPoints;
     }
 
+    public Medaille(int id, String nom, int nbPoints, ArrayList<Participation> participations, PaysMedaille paysMedaille) {
+        this.id = id;
+        this.nom = nom;
+        this.nbPoints = nbPoints;
+        this.participations = participations;
+        this.paysMedaille = paysMedaille;
+    }
+
     public int getId() {
         return id;
     }

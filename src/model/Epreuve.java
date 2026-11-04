@@ -12,6 +12,13 @@ public abstract class Epreuve {
         this.nom = nom;
     }
 
+    public Epreuve(int id, String nom, Sport sport) {
+        super();
+        this.id = id;
+        this.nom = nom;
+        this.sport = sport;
+    }
+
     public int getId() {
         return id;
     }

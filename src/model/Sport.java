@@ -13,6 +13,12 @@ public class Sport {
         this.nom = nom;
     }
 
+    public Sport(int id, String nom, ArrayList<Epreuve> epreuves) {
+        this.id = id;
+        this.nom = nom;
+        this.epreuves = epreuves;
+    }
+
     public int getId() {
         return id;
     }

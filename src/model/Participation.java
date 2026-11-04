@@ -15,6 +15,15 @@ public class Participation {
         this.recordOlympique = recordOlympique;
     }
 
+    public Participation(int place, String temps, String recordOlympique, Athlete athlete, Medaille medaille, EpreuveIndividuelle epreuveIndividuelle) {
+        this.place = place;
+        this.temps = temps;
+        this.recordOlympique = recordOlympique;
+        this.athlete = athlete;
+        this.medaille = medaille;
+        this.epreuveIndividuelle = epreuveIndividuelle;
+    }
+
     public int getPlace() {
         return place;
     }

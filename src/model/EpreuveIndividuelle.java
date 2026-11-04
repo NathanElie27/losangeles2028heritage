@@ -12,6 +12,12 @@ public class EpreuveIndividuelle extends Epreuve {
         this.recordOlympique = recordOlympique;
     }
 
+    public EpreuveIndividuelle(int id, String nom, String recordOlympique, ArrayList<Participation> participations) {
+        super(id, nom);
+        this.recordOlympique = recordOlympique;
+        this.participations = participations;
+    }
+
     public String getRecordOlympique() {
         return recordOlympique;
     }
