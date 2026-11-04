@@ -1,14 +1,18 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Pays {
 
     private int id;
-    private String nom;
+    private static String nom = "France";
     private ArrayList<Athlete> Athletes;
     private ArrayList<Medaille> medailles;
     private ArrayList<EpreuveCollective> epreuveCollectives;
+
+    public Pays() {
+    }
 
     public Pays(int id, String nom) {
         this.id = id;

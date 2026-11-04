@@ -6,8 +6,7 @@ public class EpreuveCollective extends Epreuve{
 
     private String dureeMin;
     private int nbTours;
-    private ArrayList<Pays> pays;
-    private EpreuveCollectivePays epreuveCollectivePays;
+    private ArrayList<Pays> pays = new ArrayList<Pays>();
 
     public EpreuveCollective(int id, String nom, String dureeMin, int nbTours) {
         super(id, nom);
@@ -15,12 +14,11 @@ public class EpreuveCollective extends Epreuve{
         this.nbTours = nbTours;
     }
 
-    public EpreuveCollective(int id, String nom, String dureeMin, int nbTours, ArrayList<Pays> pays, EpreuveCollectivePays epreuveCollectivePays) {
+    public EpreuveCollective(int id, String nom, String dureeMin, int nbTours, ArrayList<Pays> pays) {
         super(id, nom);
         this.dureeMin = dureeMin;
         this.nbTours = nbTours;
         this.pays = pays;
-        this.epreuveCollectivePays = epreuveCollectivePays;
     }
 
     public String getDureeMin() {
@@ -47,14 +45,6 @@ public class EpreuveCollective extends Epreuve{
         this.pays = pays;
     }
 
-    public EpreuveCollectivePays getEpreuveCollectivePays() {
-        return epreuveCollectivePays;
-    }
-
-    public void setEpreuveCollectivePays(EpreuveCollectivePays epreuveCollectivePays) {
-        this.epreuveCollectivePays = epreuveCollectivePays;
-    }
-
     @Override
     public String participationEpreuve() {
         return "test";
@@ -62,6 +52,13 @@ public class EpreuveCollective extends Epreuve{
 
     @Override
     public int nbParticipantEpCollective(int nbPays) {
+        if (nbPays == 2){
+            String[] a = {"france","Italie"};
+            nbPays = a.length;
+        } else if ( nbPays == 3 ){
+            String[] a = {"france","Italie","USA"};
+            nbPays = a.length;
+        }
         return nbPays;
     }
 }
