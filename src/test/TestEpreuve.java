@@ -11,6 +11,6 @@ public class TestEpreuve {
         EpreuveCollective uneEpreuveCollective = new EpreuveCollective(1,"Basketball","40",1);
         Pays unPays = new Pays(1,"France");
 
-
+        System.out.println(uneEpreuveCollective.participationEpreuve());
     }
 }
