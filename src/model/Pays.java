@@ -1,9 +1,12 @@
 package model;
 
+import java.util.ArrayList;
+
 public class Pays {
 
     private int id;
     private String nom;
+    private ArrayList<Athlete> Athletes;
 
     public Pays(int id, String nom) {
         this.id = id;
@@ -24,5 +27,13 @@ public class Pays {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    public ArrayList<Athlete> getAthletes() {
+        return Athletes;
+    }
+
+    public void setAthletes(ArrayList<Athlete> athletes) {
+        Athletes = athletes;
     }
 }

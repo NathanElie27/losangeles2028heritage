@@ -5,6 +5,9 @@ public class Participation {
     private int place;
     private String temps;
     private String recordOlympique;
+    private Athlete athlete;
+    private Medaille medaille;
+    private EpreuveIndividuelle epreuveIndividuelle;
 
     public Participation(int place, String temps, String recordOlympique) {
         this.place = place;
@@ -34,5 +37,29 @@ public class Participation {
 
     public void setRecordOlympique(String recordOlympique) {
         this.recordOlympique = recordOlympique;
+    }
+
+    public Athlete getAthlete() {
+        return athlete;
+    }
+
+    public void setAthlete(Athlete athlete) {
+        this.athlete = athlete;
+    }
+
+    public Medaille getMedaille() {
+        return medaille;
+    }
+
+    public void setMedaille(Medaille medaille) {
+        this.medaille = medaille;
+    }
+
+    public EpreuveIndividuelle getEpreuveIndividuelle() {
+        return epreuveIndividuelle;
+    }
+
+    public void setEpreuveIndividuelle(EpreuveIndividuelle epreuveIndividuelle) {
+        this.epreuveIndividuelle = epreuveIndividuelle;
     }
 }

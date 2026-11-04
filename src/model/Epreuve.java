@@ -4,6 +4,7 @@ public abstract class Epreuve {
 
     private int id;
     private String nom;
+    private Sport sport;
 
     public Epreuve(int id, String nom) {
         super();
@@ -27,5 +28,11 @@ public abstract class Epreuve {
         this.nom = nom;
     }
 
+    public Sport getSport() {
+        return sport;
+    }
 
+    public void setSport(Sport sport) {
+        this.sport = sport;
+    }
 }
