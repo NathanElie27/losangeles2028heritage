@@ -44,4 +44,10 @@ public class EpreuveCollective extends Epreuve{
     public void setEpreuveCollectivePays(EpreuveCollectivePays epreuveCollectivePays) {
         this.epreuveCollectivePays = epreuveCollectivePays;
     }
+
+    @Override
+    public String participationEpreuve(){
+
+        return "";
+    }
 }

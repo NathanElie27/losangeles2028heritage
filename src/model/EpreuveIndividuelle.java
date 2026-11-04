@@ -25,4 +25,10 @@ public class EpreuveIndividuelle extends Epreuve {
     public void setRecordOlympique(String recordOlympique) {
         this.recordOlympique = recordOlympique;
     }
+
+    @Override
+    public String participationEpreuve(){
+
+        return "";
+    }
 }

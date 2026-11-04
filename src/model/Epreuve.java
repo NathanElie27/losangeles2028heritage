@@ -12,13 +12,6 @@ public abstract class Epreuve {
         this.nom = nom;
     }
 
-    public Epreuve(int id, String nom, Sport sport) {
-        super();
-        this.id = id;
-        this.nom = nom;
-        this.sport = sport;
-    }
-
     public int getId() {
         return id;
     }
@@ -42,4 +35,6 @@ public abstract class Epreuve {
     public void setSport(Sport sport) {
         this.sport = sport;
     }
+
+    public abstract String participationEpreuve();
 }
