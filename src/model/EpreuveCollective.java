@@ -46,8 +46,7 @@ public class EpreuveCollective extends Epreuve{
     }
 
     @Override
-    public String participationEpreuve(){
-
-        return "";
+    public String participationEpreuve() {
+        return "test";
     }
 }
