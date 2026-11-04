@@ -8,7 +8,7 @@ public class Medaille {
     private String nom;
     private int nbPoints;
     private ArrayList<Participation> participations;
-    private PaysMedaille paysMedaille;
+    private ArrayList<Pays> pays;
 
 
     public Medaille(int id, String nom, int nbPoints) {
@@ -17,12 +17,12 @@ public class Medaille {
         this.nbPoints = nbPoints;
     }
 
-    public Medaille(int id, String nom, int nbPoints, ArrayList<Participation> participations, PaysMedaille paysMedaille) {
+    public Medaille(int id, String nom, int nbPoints, ArrayList<Participation> participations, ArrayList<Pays> pays) {
         this.id = id;
         this.nom = nom;
         this.nbPoints = nbPoints;
         this.participations = participations;
-        this.paysMedaille = paysMedaille;
+        this.pays = pays;
     }
 
     public int getId() {
@@ -57,11 +57,11 @@ public class Medaille {
         this.participations = participations;
     }
 
-    public PaysMedaille getPaysMedaille() {
-        return paysMedaille;
+    public ArrayList<Pays> getPays() {
+        return pays;
     }
 
-    public void setPaysMedaille(PaysMedaille paysMedaille) {
-        this.paysMedaille = paysMedaille;
+    public void setPays(ArrayList<Pays> pays) {
+        this.pays = pays;
     }
 }

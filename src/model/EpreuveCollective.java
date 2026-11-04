@@ -6,6 +6,7 @@ public class EpreuveCollective extends Epreuve{
 
     private String dureeMin;
     private int nbTours;
+    private ArrayList<Pays> pays;
     private EpreuveCollectivePays epreuveCollectivePays;
 
     public EpreuveCollective(int id, String nom, String dureeMin, int nbTours) {
@@ -14,10 +15,11 @@ public class EpreuveCollective extends Epreuve{
         this.nbTours = nbTours;
     }
 
-    public EpreuveCollective(int id, String nom, String dureeMin, int nbTours, EpreuveCollectivePays epreuveCollectivePays) {
+    public EpreuveCollective(int id, String nom, String dureeMin, int nbTours, ArrayList<Pays> pays, EpreuveCollectivePays epreuveCollectivePays) {
         super(id, nom);
         this.dureeMin = dureeMin;
         this.nbTours = nbTours;
+        this.pays = pays;
         this.epreuveCollectivePays = epreuveCollectivePays;
     }
 
@@ -35,6 +37,14 @@ public class EpreuveCollective extends Epreuve{
 
     public void setNbTours(int nbTours) {
         this.nbTours = nbTours;
+    }
+
+    public ArrayList<Pays> getPays() {
+        return pays;
+    }
+
+    public void setPays(ArrayList<Pays> pays) {
+        this.pays = pays;
     }
 
     public EpreuveCollectivePays getEpreuveCollectivePays() {

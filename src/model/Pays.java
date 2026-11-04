@@ -7,20 +7,20 @@ public class Pays {
     private int id;
     private String nom;
     private ArrayList<Athlete> Athletes;
-    private PaysMedaille paysMedaille;
-    private EpreuveCollectivePays epreuveCollectivePays;
+    private ArrayList<Medaille> medailles;
+    private ArrayList<EpreuveCollective> epreuveCollectives;
 
     public Pays(int id, String nom) {
         this.id = id;
         this.nom = nom;
     }
 
-    public Pays(int id, String nom, ArrayList<Athlete> athletes, PaysMedaille paysMedaille, EpreuveCollectivePays epreuveCollectivePays) {
+    public Pays(int id, String nom, ArrayList<Athlete> athletes, ArrayList<Medaille> medailles, ArrayList<EpreuveCollective> epreuveCollectives) {
         this.id = id;
         this.nom = nom;
         Athletes = athletes;
-        this.paysMedaille = paysMedaille;
-        this.epreuveCollectivePays = epreuveCollectivePays;
+        this.medailles = medailles;
+        this.epreuveCollectives = epreuveCollectives;
     }
 
     public int getId() {
@@ -47,19 +47,19 @@ public class Pays {
         Athletes = athletes;
     }
 
-    public PaysMedaille getPaysMedaille() {
-        return paysMedaille;
+    public ArrayList<Medaille> getMedailles() {
+        return medailles;
     }
 
-    public void setPaysMedaille(PaysMedaille paysMedaille) {
-        this.paysMedaille = paysMedaille;
+    public void setMedailles(ArrayList<Medaille> medailles) {
+        this.medailles = medailles;
     }
 
-    public EpreuveCollectivePays getEpreuveCollectivePays() {
-        return epreuveCollectivePays;
+    public ArrayList<EpreuveCollective> getEpreuveCollectives() {
+        return epreuveCollectives;
     }
 
-    public void setEpreuveCollectivePays(EpreuveCollectivePays epreuveCollectivePays) {
-        this.epreuveCollectivePays = epreuveCollectivePays;
+    public void setEpreuveCollectives(ArrayList<EpreuveCollective> epreuveCollectives) {
+        this.epreuveCollectives = epreuveCollectives;
     }
 }
