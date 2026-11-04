@@ -1,0 +1,6 @@
+Epreuve (id  nom )
+EpreuveIndividuellle (#id, recordOlympique )
+EpreuveCollective  (#id, dureeMin , nbTours )
+Participation  (idplace , temps , recordOlympiques , #id)
+Pays (id, nom)
+EpreuveCollectivePays (#idEpreuve, #idPays)
