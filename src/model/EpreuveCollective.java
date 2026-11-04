@@ -59,4 +59,9 @@ public class EpreuveCollective extends Epreuve{
     public String participationEpreuve() {
         return "test";
     }
+
+    @Override
+    public int nbParticipantEpCollective(int nbPays) {
+        return nbPays;
+    }
 }

@@ -37,4 +37,5 @@ public abstract class Epreuve {
     }
 
     public abstract String participationEpreuve();
+    public abstract int nbParticipantEpCollective(int nbPays);
 }

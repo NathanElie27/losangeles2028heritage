@@ -31,4 +31,9 @@ public class EpreuveIndividuelle extends Epreuve {
 
         return "";
     }
+
+    @Override
+    public int nbParticipantEpCollective(int nbPays) {
+        return 5;
+    }
 }
