@@ -8,6 +8,7 @@ public class Medaille {
     private String nom;
     private int nbPoints;
     private ArrayList<Participation> participations;
+    private PaysMedaille paysMedaille;
 
 
     public Medaille(int id, String nom, int nbPoints) {
@@ -46,5 +47,13 @@ public class Medaille {
 
     public void setParticipations(ArrayList<Participation> participations) {
         this.participations = participations;
+    }
+
+    public PaysMedaille getPaysMedaille() {
+        return paysMedaille;
+    }
+
+    public void setPaysMedaille(PaysMedaille paysMedaille) {
+        this.paysMedaille = paysMedaille;
     }
 }
